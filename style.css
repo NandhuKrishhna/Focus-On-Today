@@ -50,9 +50,10 @@ main {
     margin-bottom: 42px;
 }
 
+
 .progress-value {
     height: 100%;
-    width: 66%;
+    width: 0;
     background-color: rgb(62, 193, 39);
     border-radius: 15px;
     font-weight: 500;
@@ -60,6 +61,11 @@ main {
     color: #EEFFE0;
     display: flex;
     align-items: center;
+    overflow: hidden;
+
+}
+
+.progress-value span {
     padding-left: 20px;
 }
 
@@ -68,6 +74,10 @@ main {
     color: #FF5151;
     margin-top: 5px;
     display: none;
+}
+
+.show-error .error-label {
+    display: block;
 }
 
 .goal-container {
